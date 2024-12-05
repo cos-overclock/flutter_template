@@ -1,0 +1,58 @@
+name: flutter_template
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+
+  # コード生成用アノテーション
+  freezed_annotation: ^2.4.4
+  riverpod_annotation: ^2.6.1
+  json_annotation: ^4.9.0
+
+  # 状態管理
+  hooks_riverpod: ^2.6.1
+
+  # Logger
+  talker_flutter: ^4.5.2
+  talker_riverpod_logger: ^4.5.2
+
+  # DI
+  get_it: ^8.0.2
+
+  # Navigation
+  go_router: ^14.6.2
+
+  # データベース(データ永続化)
+  shared_preferences: ^2.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # リンター
+  flutter_lints: ^4.0.0
+  custom_lint: ^0.7.0
+  riverpod_lint: ^2.6.3
+
+  # アイコン生成
+  flutter_launcher_icons: ^0.14.1
+
+  # コード生成
+  build_runner: ^2.4.13
+  build_verify: ^3.1.0
+  riverpod_generator: ^2.6.3
+  freezed: ^2.5.7
+  json_serializable: ^6.9.0
+  go_router_builder: ^2.7.1
+
+flutter:
+  uses-material-design: true
