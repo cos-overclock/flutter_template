@@ -43,3 +43,6 @@ app.*.map.json
 /android/app/release
 
 dart_defines/*
+
+**/android/app/google-services.json
+**/ios/Flutter/Dart-Defines.xcconfig
