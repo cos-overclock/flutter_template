@@ -33,6 +33,8 @@ dependencies:
 
   # データベース(データ永続化)
   shared_preferences: ^2.3.3
+  drift: ^2.22.1
+  drift_flutter: ^0.2.2
 
 dev_dependencies:
   flutter_test:
@@ -53,6 +55,7 @@ dev_dependencies:
   freezed: ^2.5.7
   json_serializable: ^6.9.0
   go_router_builder: ^2.7.1
+  drift_dev: ^2.22.1
 
 flutter:
   uses-material-design: true

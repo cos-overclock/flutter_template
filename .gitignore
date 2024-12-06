@@ -46,3 +46,4 @@ dart_defines/*
 
 **/android/app/google-services.json
 **/ios/Flutter/Dart-Defines.xcconfig
+**/macos/Flutter/Dart-Defines.xcconfig

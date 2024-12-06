@@ -7,3 +7,6 @@ flutter_launcher_icons:
   adaptive_icon_foreground_inset: 24
   adaptive_icon_monochrome: 'assets/launcher_icon/release/icon-mono.png'
   remove_alpha_ios: true
+  macos:
+    generate: true
+    image_path: 'assets/launcher_icon/release/icon.png'

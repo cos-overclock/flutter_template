@@ -22,9 +22,8 @@ final goRouter = GoRouter(
 @TypedGoRoute<MainRoute>(
   path: '/',
   routes: <TypedGoRoute<GoRouteData>>[
-    TypedGoRoute<DetailRoute>(
-      path: '/detail',
-    ),
+    TypedGoRoute<DetailRoute>(path: '/detail'),
+    TypedGoRoute<TalkerRoute>(path: '/talker'),
   ],
 )
 class MainRoute extends GoRouteData {
@@ -41,6 +40,14 @@ class DetailRoute extends GoRouteData {
 
   @override
   Widget build(BuildContext context, GoRouterState state) => DetailPage(id: id);
+}
+
+class TalkerRoute extends GoRouteData {
+  const TalkerRoute();
+
+  @override
+  Widget build(BuildContext context, GoRouterState state) =>
+      TalkerScreen(talker: talker);
 }
 
 class ErrorRoute extends GoRouteData {
