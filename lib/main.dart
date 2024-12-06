@@ -6,6 +6,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:talker_riverpod_logger/talker_riverpod_logger.dart';
 
+import 'application/bind.dart';
 import 'application/router.dart';
 import 'common/log.dart';
 import 'theme/theme.dart';
@@ -13,6 +14,8 @@ import 'theme/theme.dart';
 void main() async {
   runZonedGuarded(() {
     WidgetsFlutterBinding.ensureInitialized();
+
+    bind();
 
     // Flutterフレームワーク内のエラーをキャッチ
     FlutterError.onError = (FlutterErrorDetails details) =>
